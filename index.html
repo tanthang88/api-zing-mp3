@@ -1,96 +1,144 @@
-<h1>Home Page</h1>
-<h2>Install</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<h3>Install Package</h3>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API ZING MP3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
+  <script>
+    const URL = window.location.origin;
+  </script>
+</head>
 
-<p><code>
-$ yarn install # npm install
-</code></p>
+<body>
+  <div class="container p-5">
+    <h1 style="text-align:center;">Document API Zing MP3</h1>
+    <div class="table-resposive">
+      <table class="table table-dark table-borderless">
+        <!-- <caption>If run project with localhost, URL site: http:localhost:3000/api/...</caption> -->
+        <tbody>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Song:</h4>
+            </th>
+            <td>
+              <p>/api/song?id={param-id-song}</p>
+            </td>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Detail Playlist:</h4>
+              <td>
+                <p>/api/detailplaylist?id={param-id-playlist}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Home:</h4>
+              <td>
+                <p>/api/home?page={param-page}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Top 100:</h4>
+              <td>
+                <p>/api/top100</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Charthome:</h4>
+              <td>
+                <p>/api/charthome</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get New Release Chart:</h4>
+              <td>
+                <p>/api/newreleasechart</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Info Song:</h4>
+              <td>
+                <p>/api/infosong?id={param-id-song}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Artist:</h4>
+              <td>
+                <p>/api/artist?name={param-name}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Lyric:</h4>
+              <td>
+                <p>/api/lyric?id={param-id-song}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Search:</h4>
+              <td>
+                <p>/api/search?keyword={keyword}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get List MV:</h4>
+              <td>
+                <p>/api/listmv?{id, page, count}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Categoty MV:</h4>
+              <td>
+                <p>/api/categorymv?id={param-id-video}</p>
+              </td>
+            </th>
+          </tr>
+          <tr class="align-middle text-center">
+            <th>
+              <h4>Get Video:</h4>
+              <td>
+                <p>/api/video?id={param-id-video}</p>
+              </td>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
 
-<h3>Run App</h3>
-
-<p><code>
-$ yarn start # npm run start
-</code></p>
-
-<h2>Usage</h2>
-
-<h3>Open Browser <a href="http://localhost:3000">http://localhost:3000</a></h3>
-
-<h3>Get Song:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/song?id={param-id-song}</p>
-</blockquote>
-
-<h3>Get Detail Playlist:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/detailplaylist?id={param-id-playlist}</p>
-</blockquote>
-
-<h3>Get Home:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/home?page={param-page}</p>
-</blockquote>
-
-<h3>Get Top 100:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/top100</p>
-</blockquote>
-
-<h3>Get Charthome:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/charthome</p>
-</blockquote>
-
-<h3>Get New Release Chart:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/newreleasechart</p>
-</blockquote>
-
-<h3>Get Info Song:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/infosong?id={param-id-song}</p>
-</blockquote>
-
-<h3>Get Artist:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/artist?name={param-name}</p>
-</blockquote>
-
-<h3>Get Lyric:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/lyric?id={param-id-song}</p>
-</blockquote>
-
-<h3>Search:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/search?keyword={keyword}</p>
-</blockquote>
-
-<h3>Get List MV:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/listmv?{id, page, count}</p>
-</blockquote>
-
-<h3>Get Categoty MV:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/categorymv?id={param-id-video}</p>
-</blockquote>
-
-<h3>Get Video:</h3>
-
-<blockquote>
-  <p>http://localhost:3000/api/video?id={param-id-video}</p>
-</blockquote>
+</html>
