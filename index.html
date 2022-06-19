@@ -14,14 +14,14 @@
       font-family: 'Nunito', sans-serif;
     }
   </style>
-  <script>
-    const URL = window.location.origin;
-  </script>
 </head>
 
 <body>
   <div class="container p-5">
     <h1 style="text-align:center;">Document API Zing MP3</h1>
+    <div>
+      <h5 id="example"></h5>
+    </div>
     <div class="table-resposive">
       <table class="table table-dark table-borderless">
         <!-- <caption>If run project with localhost, URL site: http:localhost:3000/api/...</caption> -->
@@ -139,6 +139,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+    <script>
+      const ex = document.getElementById("example");
+      ex.innerText = `Example: ${window.location.protocol}://${window.location.host}/api/....`;
+    </script>
 </body>
 
 </html>
